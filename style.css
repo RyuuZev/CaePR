@@ -428,3 +428,134 @@
     border-radius: 20px;
     font-size: 0.8rem;
 }
+
+/* Add this to your CSS */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--dark-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    /* Add hamburger menu */
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        margin-bottom: 2rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .profile-card {
+        width: 250px;
+        height: 250px;
+    }
+}@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 30px;
+    }
+    
+    .experience-timeline::before {
+        left: 15px;
+    }
+    
+    .experience-date {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 10px;
+        color: var(--light-color);
+    }
+    
+    .experience-card {
+        padding: 15px;
+    }
+    
+    .experience-card:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    /* Form adjustments */
+    .contact-form {
+        padding: 0 1rem;
+    }
+    
+    /* Footer adjustments */
+    footer {
+        padding: 1.5rem 0;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.5rem;
+    }
+}
